@@ -5,8 +5,16 @@ import "./sidebar.css";
 import { createNode } from "../../constants/createNode";
 import { useWindowSize } from "../../hooks/use-windowSize";
 const Sidebar = () => {
-  const { setNodes, nodeInfo, panel, setEdges, edgeInfo, nodes, setIsOpen } =
-    useAppContext(); // Get input and setter from context
+  const {
+    setNodes,
+    nodeInfo,
+    panel,
+    setPanel,
+    setEdges,
+    edgeInfo,
+    nodes,
+    setIsOpen,
+  } = useAppContext(); // Get input and setter from context
   const windowSize = useWindowSize()[0];
   const [inputValue, setInputValue] = useState("");
   const onDragStart = (event, nodeType) => {
