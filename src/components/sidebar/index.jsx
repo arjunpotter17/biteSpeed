@@ -128,6 +128,7 @@ const Sidebar = () => {
               className="px-4 py-2 bg-red-500 text-white rounded"
               onClick={() => {
                 setEdges((es) => es.filter((e) => e.id !== edgeInfo));
+                setPanel("nodes");
               }}
             >
               Delete Edge
